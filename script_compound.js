@@ -48,7 +48,10 @@ function renderChart(balances, isSample) {
             datasets: [{
                 label: 'Balance',
                 data: balances,
-                backgroundColor: 'rgba(54, 162, 235, 0.7)'
+                backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                borderColor: 'rgba(0, 123, 255, 1)',
+                borderWidth: 1,
+                borderRadius: 5
             }]
         },
         options: {

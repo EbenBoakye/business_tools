@@ -83,9 +83,10 @@ function drawChart(labels, data) {
             datasets: [{
                 label: 'Projected Revenue',
                 data: data,
-                backgroundColor: 'rgba(52, 152, 219, 0.6)',
-                borderColor: 'rgba(41, 128, 185, 1)',
-                borderWidth: 1
+                backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                borderColor: 'rgba(0, 123, 255, 1)',
+                borderWidth: 1,
+                borderRadius: 5
             }]
         },
         options: {

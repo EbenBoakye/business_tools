@@ -36,11 +36,19 @@
     transform: scale(1.05);
 }
 .tool h2 {
+    font-weight: bold;
+    font-size: 1.6em;
+    font-style: bold;
     margin-top: 0;
-    color:#5887a2;
+    color:#3498db;
 }
 .tool p {
-    color: #666;
+    color: #504d4d;
+}
+.tool img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners at the top */
 }
 .footer {
     background-color: #333;
@@ -50,9 +58,10 @@
     margin-top: auto;
 }
 /* Responsive design */
-@media screen and (max-width: 480px) {
-    .banner h1 {
-        font-size: 1.2em;
+@media (max-width: 600px) {
+    .tools-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .tools-container {

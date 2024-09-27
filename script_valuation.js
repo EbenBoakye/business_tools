@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 datasets: [{
                     label: 'Estimated Business Value (£)',
                     data: data,
-                    backgroundColor: 'rgba(0, 123, 255, 0.7)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.7)',
                     borderColor: 'rgba(0, 123, 255, 1)',
                     borderWidth: 1,
                     borderRadius: 5
