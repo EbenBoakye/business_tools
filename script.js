@@ -62,7 +62,7 @@ function calculateGrowth() {
     // Prepare labels for the chart
     let labels = [];
     for (let i = 0; i <= predictionPeriod; i++) {
-        labels.push(`£{revenuePeriod.charAt(0).toUpperCase()}£{revenuePeriod.slice(1)} £{i}`);
+        labels.push(`${revenuePeriod.charAt(0).toUpperCase()}${revenuePeriod.slice(1)} ${i}`);
     }
 
     // Draw the chart
