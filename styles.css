@@ -153,7 +153,12 @@
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
+.calculator-container h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #3498db;
+    margin-top: 0;
+}
 /* Added display: flex to .inner-container */
 .inner-container {
     display: flex;
@@ -303,9 +308,11 @@
     color: #333;
 }
 
-h2 {
+.value h2 {
     text-align: center;
-    margin-top: 20px;
+    font-weight: bold;
+    color: #3498db;
+    margin-top: 0;
 }
 
 #widget-container {
@@ -434,7 +441,9 @@ h1, h2, h3 {
 /* Title */
 .widget-title {
     text-align: center;
-    font-size: 2em;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 1.7em;
     margin-bottom: 20px;
 }
 /* Widget Container */
