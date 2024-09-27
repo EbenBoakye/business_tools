@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function displaySampleChart() {
         var sampleLabels = ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5'];
         var sampleData = [250000, 275000, 302500, 332750, 366025]; // Sample data
-        document.getElementById('valuation-amount').innerText = '$' + parseFloat(sampleData[0]).toLocaleString();
+        document.getElementById('valuation-amount').innerText = '£' + parseFloat(sampleData[0]).toLocaleString();
         drawChart(sampleLabels, sampleData);
     }
 
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             data: {
                 labels: labels,
                 datasets: [{
-                    label: 'Estimated Business Value ($)',
+                    label: 'Estimated Business Value (£)',
                     data: data,
                     backgroundColor: 'rgba(0, 123, 255, 0.7)',
                     borderColor: 'rgba(0, 123, 255, 1)',
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         anchor: 'end',
                         align: 'top',
                         formatter: function(value, context) {
-                            return '$' + parseFloat(value).toLocaleString();
+                            return '£' + parseFloat(value).toLocaleString();
                         },
                         color: '#000',
                         font: {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 if (label) {
                                     label += ': ';
                                 }
-                                label += '$' + context.parsed.y.toLocaleString();
+                                label += '£' + context.parsed.y.toLocaleString();
                                 return label;
                             }
                         }
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     y: {
                         ticks: {
                             callback: function(value) {
-                                return '$' + value.toLocaleString();
+                                return '£' + value.toLocaleString();
                             }
                         },
                         beginAtZero: true
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         // Current valuation is the estimated business value in Year 1
         var currentBusinessValue = valuations[0];
-        document.getElementById('valuation-amount').innerText = '$' + parseFloat(currentBusinessValue).toLocaleString();
+        document.getElementById('valuation-amount').innerText = '£' + parseFloat(currentBusinessValue).toLocaleString();
         // Draw chart with actual data
         drawChart(labels, valuations);
     });
