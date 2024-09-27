@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Moved the title above the widget container -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator</title>
+    <!-- Include Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include Chart.js Plugin for Data Labels -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <!-- Include html2canvas CDN for downloading the chart -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="compound">
+    <!-- Home Button -->
+    <a href="index.html" class="home-button">Home</a>
+    <!-- Moved the title above the widget container -->
+    <h1 class="widget-title">Compound Interest Calculator</h1>
+    <div class="widget-container">
+        <div class="input-section">
+            <label for="initialDeposit">Initial Deposit $</label>
+            <input type="number" id="initialDeposit" value="1000">
+
+            <label for="contributionAmount">Contribution Amount $</label>
+            <input type="number" id="contributionAmount" value="100">
+
+            <label for="contributionFrequency">Contribution Frequency</label>
+            <select id="contributionFrequency">
+                <option value="365">Daily</option>
+                <option value="52">Weekly</option>
+                <option value="12">Monthly</option>
+                <option value="1">Annually</option>
+            </select>
+
+            <label for="yearsOfGrowth">Years Of Growth</label>
+            <input type="number" id="yearsOfGrowth" value="10">
+
+            <label for="rateOfReturn">Estimated Rate Of Return %</label>
+            <input type="number" id="rateOfReturn" value="5">
+
+            <label for="compoundFrequency">Compound Frequency</label>
+            <select id="compoundFrequency">
+                <option value="365">Daily</option>
+                <option value="52">Weekly</option>
+                <option value="12">Monthly</option>
+                <option value="1">Annually</option>
+            </select>
+
+            <button id="calculateButton">Calculate</button>
+            <button id="downloadButton">Download</button>
+        </div>
+        <div class="output-section">
+            <div class="output-values">
+                <h3>Total Balance: $<span id="totalBalance">0.00</span></h3>
+                <h3>Total Investment: $<span id="totalInvestment">0.00</span></h3>
+                <h3>Total Interest: $<span id="totalInterest">0.00</span></h3>
+            </div>
+            <canvas id="balanceChart"></canvas>
+        </div>
+    </div>
+    <div class="footer">
+        Powered By <a href="https://eboakye.me/#home" target="_blank">Ebenezer Boakye</a>
+    </div>
+    <!-- Include script at the end of the body -->
+    <script src="script_compound.js"></script>
+</body>
+</html>
