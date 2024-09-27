@@ -61,7 +61,7 @@ function renderChart(balances, isSample) {
                 tooltip: {
                     callbacks: {
                         label: function(context) {
-                            return `$${context.parsed.y}`;
+                            return `£${context.parsed.y}`;
                         }
                     }
                 },
@@ -70,7 +70,7 @@ function renderChart(balances, isSample) {
                     anchor: 'end',
                     align: 'end',
                     formatter: function(value) {
-                        return `$${value}`;
+                        return `£${value}`;
                     },
                     color: '#000',
                     font: {

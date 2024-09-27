@@ -103,7 +103,7 @@ function drawChart(labels, data) {
                     anchor: 'end',
                     align: 'top',
                     formatter: function(value, context) {
-                        return '$' + value.toFixed(2);
+                        return '£' + value.toFixed(2);
                     },
                     font: {
                         weight: 'bold'
@@ -115,7 +115,7 @@ function drawChart(labels, data) {
                     beginAtZero: true,
                     ticks: {
                         callback: function(value, index, values) {
-                            return '$' + value;
+                            return '£' + value;
                         }
                     }
                 }
