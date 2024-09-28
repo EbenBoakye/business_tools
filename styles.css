@@ -17,6 +17,14 @@
     text-align: center;
     padding: 20px;
 }
+.banner h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+    margin: 0;
+}
+.banner span {
+    color: white; /* Will experiment with different colours*/
+}
 .tools-container {
     display: flex;
     justify-content: space-around;
