@@ -18,7 +18,6 @@ Each tool is built with modern web technologies and provides interactive charts 
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-  - [Homepage](#homepage)
   - [Business Valuation Calculator](#business-valuation-calculator)
   - [Compound Interest Calculator](#compound-interest-calculator)
   - [Revenue Growth Calculator](#revenue-growth-calculator)
