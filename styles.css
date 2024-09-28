@@ -563,3 +563,9 @@ h1, h2, h3 {
         margin-left: 0;
     }
 }
+/* End of compound_interest styling */
+
+/* how to Use htu_bvaluation styling */
+#widget-container h3  {
+    color: #3498db; 
+}
