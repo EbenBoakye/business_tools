@@ -163,10 +163,15 @@ Follow these instructions to get a copy of the project up and running on your lo
 ## **Technologies Used**
 
 HTML5: For structuring the web pages.
+
 CSS3: For styling and responsive design.
+
 JavaScript (ES6+): For interactivity and calculations.
+
 [Chart.js]:(https://www.chartjs.org/) For rendering interactive charts.
+
 Chart.js Data Labels Plugin: For displaying data labels on charts.
+
 html2canvas: For capturing charts as images for download.
 
 ## **Contributing**
